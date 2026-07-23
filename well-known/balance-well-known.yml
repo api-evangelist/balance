@@ -1,0 +1,28 @@
+generated: '2026-07-18'
+method: searched
+description: >-
+  Probe of the /.well-known/ discovery surface across Balance hosts. No valid
+  discovery document was found. The dashboard openid-configuration path returns
+  HTTP 200 but serves the SPA index.html (the dashboard is a Frontegg-based
+  single-page app), not a JSON OIDC discovery document, so it is NOT a valid
+  well-known catalog and no WellKnown pointer is wired. Recorded here as honest
+  inventory of the probe.
+hosts:
+  - host: https://www.getbalance.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+  - host: https://api.getbalance.com
+    documents:
+      - path: /.well-known/openid-configuration
+        status: 404
+  - host: https://dashboard.getbalance.com
+    documents:
+      - path: /.well-known/openid-configuration
+        status: 200
+        valid: false
+        note: >-
+          Returns the SPA index.html (Frontegg dashboard), not a JSON OIDC
+          discovery document. Not a real well-known document.

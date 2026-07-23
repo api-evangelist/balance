@@ -1,0 +1,41 @@
+generated: '2026-07-18'
+method: searched
+source: https://updates.getbalance.com
+docs: https://updates.getbalance.com
+description: >-
+  Balance publishes a dated product-update changelog on a LaunchNotes-hosted
+  portal (updates.getbalance.com), cadenced as monthly "Product Updates" posts
+  plus occasional feature announcements. A separate announcement introduced API
+  Version 2.0 (2024-04-17) as a major upgrade. The API itself is versioned "v2";
+  the changelog does not publish a machine-readable per-version diff. Recent
+  entries captured verbatim below; the live portal is the source of truth.
+versioning:
+  scheme: major API version (v2)
+  api_version: '2.0'
+  api_v2_announced: '2024-04-17'
+  api_v2_source: https://updates.getbalance.com/announcements/introducing-api-version-2-0
+entries:
+  - date: '2026-07-06'
+    title: 'Product Updates: June 2026'
+  - date: '2026-06-23'
+    title: 'Product Updates: May 2026'
+  - date: '2026-05-14'
+    title: 'Product Updates: April 2026'
+  - date: '2026-04-13'
+    title: 'Product Updates: March 2026'
+  - date: '2026-03-10'
+    title: 'Product Updates: February 2026'
+  - date: '2026-02-03'
+    title: 'Product Updates: January 2026'
+  - date: '2026-01-06'
+    title: '2025 Product Year in Review'
+  - date: '2025-12-08'
+    title: 'Product Updates: November 2025'
+  - date: '2024-04-17'
+    title: 'Introducing API Version 2.0'
+    highlights:
+      - Split Payments (combine partial credit with card payment on large orders)
+      - New risk tiers (approve previously declined buyers with graduating limits)
+      - Enhanced dashboard transaction/invoice pages
+      - Pre-fill application (merchants populate buyer business details)
+      - Invoice metadata (custom key/value pairs on invoices and related objects)

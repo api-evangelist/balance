@@ -1,0 +1,39 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.getbalance.com/legal/security-policy
+description: >-
+  Conformance / compliance posture for Balance, drawn from the published security
+  policy. Balance is a B2B payments platform; card payment processing runs through
+  Stripe, which holds PCI DSS Service Provider Level 1. Balance's own published
+  controls cover transport and at-rest encryption. No independent SOC 2 / ISO 27001
+  attestation for Balance itself was located on the public site. Because the
+  OpenAPI is password-gated, cross-cutting API standards (OAuth2/OIDC, RFC 9457,
+  pagination, idempotency) could not be derived from a spec and are left unknown
+  rather than asserted.
+standards:
+  - id: pci-dss
+    conforms: true
+    level: 'Service Provider Level 1 (via payment processor Stripe)'
+    evidence: >-
+      Security policy states card processing runs through Stripe, which holds
+      "PCI Service Provider Level 1" certification.
+  - id: tls-in-transit
+    conforms: true
+    evidence: >-
+      HTTPS with RSA 2048-bit key, SHA256-with-RSA signature (TLSv1.3 confirmed by
+      domain-security probe).
+  - id: aes-256-at-rest
+    conforms: true
+    evidence: 'Security policy states data is encrypted at rest with AES-256.'
+  - id: soc2
+    conforms: unknown
+    evidence: 'Not published on the public security policy.'
+  - id: iso-27001
+    conforms: unknown
+    evidence: 'Not published on the public security policy.'
+  - id: oauth2
+    conforms: unknown
+    evidence: 'OpenAPI is password-gated; auth model not derivable from a public spec.'
+  - id: rfc9457-problem-details
+    conforms: unknown
+    evidence: 'OpenAPI is password-gated; error envelope not derivable.'

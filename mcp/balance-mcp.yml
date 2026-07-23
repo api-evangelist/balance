@@ -1,0 +1,42 @@
+generated: '2026-07-18'
+method: searched
+status: beta
+source: https://www.getbalance.com/post/balance-model-context-protocol-server-for-b2b-agentic-commerce-beta-release/
+description: >-
+  Balance announced a Model Context Protocol (MCP) server for B2B agentic
+  commerce, in closed beta at the time of capture. It lets LLMs and AI agents
+  interact with Balance's APIs to get secure, conversational access to payments,
+  credit, and accounts-receivable data. The public announcement is
+  marketing-level: it enumerates the capability surface but does not disclose the
+  hosted endpoint URL, transport, or authentication mechanism, and interested
+  parties must register for general-availability access. Capabilities below are
+  transcribed verbatim from the announcement; connection details are intentionally
+  left null until Balance publishes them (no fabrication).
+server:
+  name: balance
+  transport: null
+  url: null
+  auth: null
+  availability: closed-beta
+tools:
+  # Data-query capabilities described in the announcement (names are descriptive,
+  # not verbatim tool identifiers — Balance has not published the tool schema).
+  - name: customer_portfolio_analysis
+    description: Query and analyze the merchant's buyer/customer portfolio.
+  - name: payment_history
+    description: Retrieve payment history data.
+  - name: credit_limits
+    description: Look up buyer credit limits.
+  - name: invoice_status
+    description: Check invoice status.
+  # Action capabilities described in the announcement.
+  - name: buyer_onboarding
+    description: Onboard a buyer.
+  - name: invoice_create_and_deliver
+    description: Create and deliver invoices.
+  - name: credit_data_refresh
+    description: Refresh credit data.
+  - name: collections_management
+    description: Manage collections.
+  - name: payment_status_check
+    description: Check payment status.

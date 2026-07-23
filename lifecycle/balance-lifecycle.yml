@@ -1,0 +1,22 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.getbalance.com/get-api
+description: >-
+  Lifecycle posture for the Balance B2B payments API assembled from the public
+  developer surface. Balance runs a major-versioned API (current v2, announced
+  2024-04-17) documented on a password-gated ReadMe.io site (docs.getbalance.com),
+  operates a public status page, and publishes a monthly product-update changelog.
+  No public deprecation/sunset policy (RFC 8594 Sunset/Deprecation headers) was
+  found, and the OpenAPI is not publicly reachable to derive deprecated operations.
+versioning:
+  scheme: major-version
+  current: v2
+  announced: '2024-04-17'
+  docs: https://docs.getbalance.com
+status_page: https://status.getbalance.com
+changelog: https://updates.getbalance.com
+deprecation:
+  policy_url: null
+  sunset_header: null
+  note: No public deprecation/sunset policy located.
+deprecated_operations: []

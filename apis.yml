@@ -1,8 +1,21 @@
 aid: balance
 name: Balance
-description: 'Balance is a company surfaced as a portfolio company of forerunner-ventures, lightspeed-venture-partners,
-  ribbit-capital, techstars and added to the API Evangelist network as a stub for enrichment. Sector:
-  fintech. This profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  Balance is a financial infrastructure platform for B2B commerce that lets
+  merchants and marketplaces accept payments, offer net-terms financing (digital
+  trade credit / B2B BNPL), and automate order-to-cash accounts-receivable
+  operations. Its APIs power embedded, customizable buyer journeys, advanced and
+  consolidated billing, split payments, and AI-powered credit-risk management,
+  covering the full B2B flow from checkout through invoicing, financing, and
+  reconciliation. Balance ships pre-built integrations for platforms including
+  Shopify, BigCommerce, Magento, and Salesforce Commerce, plus marketplace
+  solutions, and exposes a v2 REST API documented on a developer portal. The
+  company was surfaced as a portfolio company of Forerunner Ventures, Lightspeed
+  Venture Partners, Ribbit Capital, and Techstars, and is profiled in the API
+  Evangelist network. Card processing runs through Stripe (PCI DSS Service
+  Provider Level 1); Balance publishes a security policy, status page, monthly
+  product-update changelog, and a beta Model Context Protocol server for agentic
+  commerce.
 url: https://raw.githubusercontent.com/api-evangelist/balance/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,13 +26,47 @@ x-backed-by:
 - techstars
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://files.readme.io/b57e38a-small-Frame_2_4.png
 tags:
 - Company
 - Fintech
-apis: []
+- Payments
+- B2B Payments
+- Accounts Receivable
+- Net Terms
+- Trade Credit
+- BNPL
+- Billing
+- Embedded Finance
+apis:
+- name: Balance API v2
+  description: >-
+    Balance's v2 REST API for B2B payments, net-terms financing, invoicing, and
+    accounts-receivable automation. Reference documentation is hosted on a
+    password-gated ReadMe.io portal (access requested via the Get API page).
+  humanURL: https://docs.getbalance.com
+  baseURL: https://api.getbalance.com
+  properties:
+  - type: Documentation
+    url: https://docs.getbalance.com
+  - type: APIReference
+    url: https://docs.getbalance.com
+  - type: GettingStarted
+    url: https://www.getbalance.com/get-api
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -28,3 +75,44 @@ maintainers:
 common:
 - type: Website
   url: https://getbalance.com
+- type: DeveloperPortal
+  url: https://www.getbalance.com/get-api
+- type: Documentation
+  url: https://docs.getbalance.com
+- type: Blog
+  url: https://www.getbalance.com/blog/
+- type: Support
+  url: https://www.getbalance.com/contact-us/
+- type: SignUp
+  url: https://www.getbalance.com/get-api
+- type: Login
+  url: https://dashboard.getbalance.com/
+- type: TermsOfService
+  url: https://www.getbalance.com/legal/balance-website-terms
+- type: PrivacyPolicy
+  url: https://www.getbalance.com/legal/privacy-policy
+- type: StatusPage
+  url: https://status.getbalance.com
+- type: ChangeLog
+  url: changelog/balance-changelog.yml
+- type: Lifecycle
+  url: lifecycle/balance-lifecycle.yml
+- type: LLMsTxt
+  url: llms/balance-llms.txt
+- type: MCPServer
+  url: mcp/balance-mcp.yml
+- type: Security
+  url: https://www.getbalance.com/legal/security-policy
+- type: VulnerabilityDisclosure
+  url: security/balance-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/balance-domain-security.yml
+- type: Conformance
+  url: conformance/balance-conformance.yml
+- type: Compliance
+  url: https://www.getbalance.com/legal/security-policy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
