@@ -52,6 +52,9 @@ specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-18'
 image: https://files.readme.io/b57e38a-small-Frame_2_4.png
+x-docs-platform: readme
+x-docs-platform-confidence: high
+x-docs-platform-checked: 2026-09-20
 tags:
 - Company
 - Fintech
